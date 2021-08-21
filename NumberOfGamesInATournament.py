@@ -1,7 +1,6 @@
 from itertools import combinations
 
-
-for c in combinations("abcdefgh",2):
+for c in combinations("abcd",2):
     print("".join(c))
 
 #Recursion
@@ -11,4 +10,4 @@ def T(n):
 
     return (n -1) + T(n - 1)
 
-print(T(8))
+print(T(14))
