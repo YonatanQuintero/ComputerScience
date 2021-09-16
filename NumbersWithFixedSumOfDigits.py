@@ -1,4 +1,5 @@
 from itertools import product
+import itertools as it
 
 # How many non-negative integer numbers are there below 10000 such that their sum of digits is equal to 9?
 
@@ -20,4 +21,13 @@ for d in product(range(10), repeat=4):
         print(d)
         count += 1
 
+print(count)
+
+#Another way
+
+count = 0
+
+for d in it.product(range(10), repeat = 4):
+    if sum(d) == 10:
+        count += 1
 print(count)
